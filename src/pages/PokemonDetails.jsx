@@ -1,16 +1,21 @@
 import { useLoaderData } from "react-router-dom";
+import "../assets/css/pokemonDetalle.css";
 
 const PokemonDetails = () => {
   const { pokemonDetalle } = useLoaderData();
 
   console.log("llegando al componente=>", pokemonDetalle);
 
-  const { name, sprites } = pokemonDetalle;
+  const { name, sprites, height, base_experience } = pokemonDetalle;
 
   return (
     <>
-      <p>{name}</p>
-      <img src={sprites.front_default} alt={name} />
+      <div className="pokemon-contenedor__detalle">
+        <p>{name}</p>
+        <div className="pokemon-contenedor__img">
+          <img src={sprites.front_default} alt={name} />
+        </div>
+      </div>
     </>
   );
 };

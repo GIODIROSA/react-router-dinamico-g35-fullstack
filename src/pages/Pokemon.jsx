@@ -19,7 +19,7 @@ const Pokemon = () => {
   return (
     <>
       {dataPokemon && (
-        <select className="form-control" onChange={handleChangePokemon}>
+        <select className="form-control my-2" onChange={handleChangePokemon}>
           <option value="">Selecciona un Pokemon</option>
           {dataPokemon.results.map((pokemon) => (
             <option key={pokemon.name} value={pokemon.name}>
@@ -29,9 +29,15 @@ const Pokemon = () => {
         </select>
       )}
       {selectPokemon && (
-        <button className="btn btn-primary my-2" type="button" onClick={handleClick}>
-          ver detalles
-        </button>
+        <div className="d-flex justify-content-center">
+          <button
+            className="btn btn-dark my-2"
+            type="button"
+            onClick={handleClick}
+          >
+            ver detalles
+          </button>
+        </div>
       )}
     </>
   );

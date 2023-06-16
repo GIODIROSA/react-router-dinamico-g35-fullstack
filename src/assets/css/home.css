@@ -1,0 +1,12 @@
+.contenedor-img-pokemones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0px;
+}
+
+.contenedor-img-pokemones img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}

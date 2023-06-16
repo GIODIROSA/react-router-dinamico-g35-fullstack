@@ -1,0 +1,25 @@
+.pokemon-contenedor__detalle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-contenedor__img {
+  width: 500px;
+  height: 500px;
+}
+
+.pokemon-contenedor__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .pokemon-contenedor__detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
