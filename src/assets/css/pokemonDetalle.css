@@ -7,9 +7,9 @@
   align-items: center;
 }
 
-.espacio-categoria{
-    padding-right: 10px;
-    font-weight: 600;
+.espacio-categoria {
+  padding-right: 10px;
+  font-weight: 600;
 }
 
 .contenedor-informativo {
@@ -36,6 +36,12 @@
 .listado-habilidades li {
   list-style: none;
   padding: 0px;
+}
+
+.link-volver {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {

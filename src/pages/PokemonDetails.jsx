@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import "../assets/css/pokemonDetalle.css";
 
 const PokemonDetails = () => {
@@ -32,9 +32,7 @@ const PokemonDetails = () => {
               <p className="none">
                 <span className="espacio-categoria">Tipo:</span>
                 {types.map((tipo) => (
-                  <span  key={tipo.type.name}>
-                    {tipo.type.name}
-                  </span>
+                  <span key={tipo.type.name}>{tipo.type.name}</span>
                 ))}
               </p>
             </li>
@@ -45,6 +43,12 @@ const PokemonDetails = () => {
           <img src={sprites.front_default} alt={name} />
           <img src={sprites.back_default} alt={name} />
         </div>
+      </div>
+
+      <div className="d-flex justify-content-center">
+        <button className="btn btn-dark">
+          <Link className="link-volver" to="/pokemon">Volver a seleccionar</Link>
+        </button>
       </div>
     </>
   );
